@@ -1,0 +1,68 @@
+<div class="container">
+  <div class="row">
+    <div class="location col-md-8 col-xs-12">
+      <img src="assets/images/logo.png" alt="logo" />
+      <div class="rest-loc">
+        <h2 class="restName">Resturant Name</h2>
+        <p>Turkish, Breakfast, Grills</p>
+        <p>
+          <i class="fa fa-map-marker"></i>
+          <span> Box No. 56123 , Dubai , Emirates </span>
+        </p>
+        <p>
+          <i class="fa fa-clock"></i>
+          <span>Working Hours : 5 AM - 10 PM</span>
+        </p>
+      </div>
+    </div>
+    <div class="share text-center col-md-3 col-xs-12">
+      <div>
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-phone-alt"></i>
+        <i class="fas fa-share-alt"></i>
+      </div>
+      <button class="btn btn-follow">Follow</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="details col-md-9 col-xs-12">
+      <mat-tab-group animationDuration="0ms">
+        <mat-tab label="Menu"> Content 1 </mat-tab>
+        <mat-tab label="Offers"> Content 2 </mat-tab>
+        <mat-tab label="My Order"> Content 3 </mat-tab>
+        <mat-tab label="View Restaurant"> Content 4 </mat-tab>
+      </mat-tab-group>
+    </div>
+    <div class="orders text-center col-md-3 col-xs-12">
+      <div class="all-orders">
+        <p class="order-name text-left">My Order (2)</p>
+        <div class="order-item" *ngFor="let item of [].constructor(3)">
+          <span>Bydina (Regular)</span>
+          <span class="order-cost">{{
+            " 42.00" | currency: "USD":"symbol"
+          }}</span>
+          <span><i class="far fa-times-circle text-right"></i></span>
+        </div>
+      </div>
+      <div class="calc-order">
+        <div class="subtotal">
+          <p>Sub Total</p>
+          <p>{{ "84" | number: ".2-2" | currency: "USD":"symbol" }}</p>
+        </div>
+        <div class="subtotal">
+          <p>Service Charge</p>
+          <p>{{ "7" | number: ".2-2" | currency: "USD":"symbol" }}</p>
+        </div>
+        <div class="subtotal">
+          <p>Tax fees</p>
+          <p>{{ "4" | number: ".2-2" | currency: "USD":"symbol" }}</p>
+        </div>
+        <div class="total">
+          <p>Total</p>
+          <p>{{ "95" | number: ".2-2" | currency: "USD":"symbol" }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,130 @@
+img {
+  width: 100px;
+  height: fit-content;
+  background-color: white;
+  padding: 15px;
+  border-radius: 25px;
+  box-shadow: 0 5px 10px rgba(128, 128, 128, 0.16);
+  float: left;
+  margin-right: 10px;
+}
+img::after {
+  clear: both;
+}
+.restName {
+  color: #5e5e5e;
+}
+.rest-loc {
+  display: inline-block;
+  padding: 10px 15px;
+  h2 {
+    padding-bottom: 20px;
+  }
+
+  p {
+    color: gray;
+    margin-top: -10px;
+    i {
+      margin-right: 5px;
+    }
+  }
+  p:first-of-type {
+    color: #b4b4b4;
+  }
+}
+.share {
+  i {
+    margin: 0 20px;
+    color: gray;
+    &:hover {
+      color: #f3bc33;
+    }
+  }
+  .btn-follow {
+    margin-top: 15px;
+    color: white;
+    background-color: #94c748;
+    border-radius: 20px;
+    padding: 3px 20px;
+    &:hover {
+      background-color: #f3bc33;
+    }
+  }
+}
+
+.details {
+  .mat-tab-group {
+    background-color: white !important;
+    border: 1px solid #bdb8bd !important;
+  }
+
+  md-tabs .md-active,
+  .mat-tab-body-content,
+  .mat-tab-body,
+  .mat-tab-body-wrapper {
+    transition: none !important;
+    transform: none !important;
+    animation-duration: 0ms !important;
+    &:active,
+    &:focus {
+      transition: none !important;
+      transform: none !important;
+      animation-duration: 0ms !important;
+    }
+  }
+  ::ng-deep {
+    .mat-tab-header {
+      border-bottom: 1px solid #e6e2e6 !important;
+      box-shadow: 0 1px 1px #e2dee2 !important;
+      color: grey !important;
+      font-weight: bold !important;
+    }
+  }
+}
+
+.orders {
+  border: 1px solid #bdb8bd;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  .all-orders {
+    border-bottom: 1px solid #bdb8bd;
+    padding: 10px 0;
+    .order-name {
+      font-size: 1.1em;
+      padding: 10px 0;
+    }
+    .order-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 0;
+      .order-cost,
+      i {
+        color: gray;
+        padding: 0 5px;
+      }
+      i {
+        font-size: 1.3em;
+        &:hover {
+          color: red;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .calc-order {
+    padding: 10px 0;
+    .subtotal,
+    .total {
+      color: gray;
+      display: flex;
+      justify-content: space-between;
+    }
+    .total {
+      color: #5e5e5e;
+      font-weight: bold;
+    }
+  }
+}

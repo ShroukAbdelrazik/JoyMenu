@@ -1,0 +1,26 @@
+{
+  "home": "الرئيسية",
+  "allResturants": "كل المطاعم",
+  "offers": "العروض",
+  "becomePartner": "كن شريكا",
+  "language": "EN",
+  "login": " انشاء حساب & تسجيل الدخول",
+  "company": "الشركة",
+  "support": "الدعم",
+  "getSocial": "تابعنا علي",
+  "subscribe": "إشترك في نشرة الأخبار",
+  "contactus": "تواصل معنا",
+  "aboutus": "من نحن",
+  "tesrmsOfUse": "شروط الإستخدام",
+  "privacy": "سياسات خاصة",
+  "facebook": "فيسبوك",
+  "twitter": "تويتر",
+  "instagram": "انستغرام",
+  "youtube": "يوتيوب",
+  "yourEmail": "البريد الإلكتروني",
+  "ok": "موافق",
+  "copyRights": "جميع الحقوق محفوظة © 2020",
+  "resturant": {
+    "searchResturant": "ابحث عن المطعم"
+  }
+}

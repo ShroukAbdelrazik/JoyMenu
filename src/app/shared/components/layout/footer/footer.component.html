@@ -1,0 +1,52 @@
+<div class="footer">
+  <div class="container">
+    <div class="top row">
+      <div class="col-lg-3 col-md-6 col-xs-12 mb-3">
+        <h4>{{ "company" | translate }}</h4>
+        <ul>
+          <li
+            *ngFor="let item of company"
+            [routerLink]="[item['path']]"
+            translate
+          >
+            {{ item["item"] }}
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 col-xs-12 mb-3">
+        <h4>{{ "support" | translate }}</h4>
+        <ul>
+          <li [routerLink]="'/'">{{ "contactus" | translate }}</li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 col-xs-12 mb-3">
+        <h4>{{ "getSocial" | translate }}</h4>
+        <ul>
+          <li
+            *ngFor="let item of social"
+            [routerLink]="[item['path']]"
+            translate
+          >
+            {{ item["item"] }}
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 col-xs-12 mb-3">
+        <h4>{{ "subscribe" | translate }}</h4>
+        <div class="subscribe">
+          <div class="form-group">
+            <input
+              type="text"
+              placeholder="{{ 'yourEmail' | translate }}"
+              class="form-control"
+            />
+          </div>
+          <div class="okBtn">{{ "ok" | translate }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="rights">
+    <p>{{ "copyRights" | translate }}</p>
+  </div>
+</div>

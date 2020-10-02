@@ -1,0 +1,101 @@
+.navbar {
+  background-color: white !important;
+}
+.navbar-brand {
+  img {
+    width: 70px;
+    height: 70px;
+  }
+}
+.navbar-collapse {
+  text-align: justify;
+}
+.nav-item {
+  a:focus,
+  a:active {
+    color: #f8901a;
+  }
+}
+.form-inline {
+  color: rgb(124 124 125);
+
+  .language {
+    min-width: 100px;
+    padding: 0 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:hover {
+      color: #fdbb0e;
+      background-color: white;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+      transition: 0.3s ease-in-out;
+      padding: 7px;
+    }
+    i {
+      font-size: 20px;
+    }
+  }
+  .account {
+    cursor: pointer;
+    min-width: 100px;
+    margin: 0px 15px;
+    padding: 0 5px;
+    // font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .fa-user-o {
+      margin: 10px;
+      border-radius: 15px;
+      border: 1px solid rgb(136 138 137);
+      padding: 4px;
+    }
+    &:hover {
+      color: #94c748;
+      background-color: white;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+      transition: 0.3s ease-in-out;
+
+      .fa-user-o {
+        border: 1px solid #94c748;
+      }
+    }
+  }
+  .cart {
+    font-size: 20px;
+    min-width: 100px;
+    margin: 0px 30px;
+    padding: 0 5px;
+    position: relative;
+    cursor: pointer;
+    span {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      font-size: 14px;
+      padding: 5px;
+      text-align: center;
+      color: white;
+      background-color: #94c748;
+      border-radius: 50%;
+      margin-top: 7px;
+    }
+    i:hover {
+      color: #94c748;
+      transition: 0.3s ease-in-out;
+      &:focus,
+      &:active {
+        border: none;
+        border-radius: 0;
+      }
+    }
+    &:focus,
+    &:active {
+      border: none;
+      border-radius: 0;
+    }
+  }
+}

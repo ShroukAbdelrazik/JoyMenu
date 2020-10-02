@@ -1,0 +1,26 @@
+{
+  "home": "Home",
+  "allResturants": "All Resturants",
+  "offers": "Offers",
+  "becomePartner": "Become a partner",
+  "language": "العربية",
+  "login": "Login & Sign Up",
+  "company": "Company",
+  "support": "Support",
+  "getSocial": "Get Social",
+  "subscribe": "Subscribe to our newsletter",
+  "contactus": "Contact Us",
+  "aboutus": "About Us",
+  "tesrmsOfUse": "Terms Of Use",
+  "privacy": "Privacy Policy",
+  "facebook": "Facebook",
+  "twitter": "Twitter",
+  "instagram": "Insagram",
+  "youtube": "Youtube",
+  "yourEmail": "Your Email",
+  "ok": "OK",
+  "copyRights": "All Rights Reseved To Joy © 2020",
+  "resturant": {
+    "searchResturant": "Search Resturant"
+  }
+}

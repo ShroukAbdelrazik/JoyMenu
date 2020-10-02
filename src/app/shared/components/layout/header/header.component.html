@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" routerLink=""
+      ><img src="assets/images/logo.png" alt="logo"
+    /></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto ml-auto pr-0">
+        <li class="nav-item" *ngFor="let elem of menuList; let i = index">
+          <a class="nav-link" [routerLink]="elem['path']" translate>
+            {{ elem["item"] }}
+          </a>
+        </li>
+      </ul>
+      <div class="form-inline my-2 my-lg-0">
+        <div class="language" (click)="changeCurrentLang()">
+          <i class="fa fa-globe"></i>
+          <span>{{ "language" | translate }}</span>
+        </div>
+        <div class="account" routerLink="/account">
+          <i class="far fa-user-o"></i>
+          <span>{{ "login" | translate }}</span>
+        </div>
+        <div class="cart" routerLink="/cart">
+          <i class="fa fa-shopping-basket"></i>
+          <span>0</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
