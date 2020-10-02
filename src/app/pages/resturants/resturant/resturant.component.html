@@ -26,41 +26,59 @@
   </div>
 
   <div class="row">
-    <div class="details col-md-9 col-xs-12">
-      <mat-tab-group animationDuration="0ms">
+    <div class="details col-lg-9 col-xs-12">
+      <!-- <mat-tab-group animationDuration="0ms">
         <mat-tab label="Menu"> Content 1 </mat-tab>
         <mat-tab label="Offers"> Content 2 </mat-tab>
         <mat-tab label="My Order"> Content 3 </mat-tab>
         <mat-tab label="View Restaurant"> Content 4 </mat-tab>
-      </mat-tab-group>
+      </mat-tab-group> -->
     </div>
-    <div class="orders text-center col-md-3 col-xs-12">
-      <div class="all-orders">
+    <div class="orders text-center col-lg-3 col-xs-12">
+      <div class="all-orders w-100">
         <p class="order-name text-left">My Order (2)</p>
-        <div class="order-item" *ngFor="let item of [].constructor(3)">
-          <span>Bydina (Regular)</span>
-          <span class="order-cost">{{
-            " 42.00" | currency: "USD":"symbol"
-          }}</span>
-          <span><i class="far fa-times-circle text-right"></i></span>
+        <div class="order-item row" *ngFor="let item of [].constructor(2)">
+          <div class="col-sm-9 text-left">
+            <p>
+              Bydina(test)
+              <span class="order-cost pl-2">{{
+                " 42.00" | currency: "USD":"symbol"
+              }}</span>
+            </p>
+          </div>
+          <div class="col-sm-2 pr-3">
+            <i class="far fa-times-circle text-right"></i>
+          </div>
+          <!--
+
+          <span></span> -->
         </div>
       </div>
-      <div class="calc-order">
-        <div class="subtotal">
-          <p>Sub Total</p>
-          <p>{{ "84" | number: ".2-2" | currency: "USD":"symbol" }}</p>
+      <div class="calc-order w-100">
+        <div class="row subtotal">
+          <div class="col-sm-8 text-left"><p>Sub Total</p></div>
+          <div class="col-sm-3">
+            <p>{{ "84" | number: ".2-2" | currency: "USD":"symbol" }}</p>
+          </div>
         </div>
-        <div class="subtotal">
-          <p>Service Charge</p>
-          <p>{{ "7" | number: ".2-2" | currency: "USD":"symbol" }}</p>
+        <div class="row subtotal">
+          <div class="col-sm-8 text-left"><p>Service Charge</p></div>
+          <div class="col-sm-3">
+            <p>{{ "7" | number: ".2-2" | currency: "USD":"symbol" }}</p>
+          </div>
         </div>
-        <div class="subtotal">
-          <p>Tax fees</p>
-          <p>{{ "4" | number: ".2-2" | currency: "USD":"symbol" }}</p>
+        <div class="row subtotal">
+          <div class="col-sm-8 text-left"><p>Tax fees</p></div>
+          <div class="col-sm-3">
+            <p>{{ "4" | number: ".2-2" | currency: "USD":"symbol" }}</p>
+          </div>
         </div>
-        <div class="total">
-          <p>Total</p>
-          <p>{{ "95" | number: ".2-2" | currency: "USD":"symbol" }}</p>
+
+        <div class="row total">
+          <div class="col-sm-8 text-left"><p>Total</p></div>
+          <div class="col-sm-3">
+            <p>{{ "95" | number: ".2-2" | currency: "USD":"symbol" }}</p>
+          </div>
         </div>
       </div>
     </div>

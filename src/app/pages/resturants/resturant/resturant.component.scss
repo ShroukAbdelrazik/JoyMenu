@@ -92,14 +92,14 @@ img::after {
   .all-orders {
     border-bottom: 1px solid #bdb8bd;
     padding: 10px 0;
+    height: 175px;
+    overflow: auto;
+    overflow-x: hidden;
     .order-name {
       font-size: 1.1em;
-      padding: 10px 0;
+      padding: 10px 0 0;
     }
     .order-item {
-      display: flex;
-      justify-content: space-between;
-      padding: 5px 0;
       .order-cost,
       i {
         color: gray;
@@ -116,11 +116,8 @@ img::after {
   }
   .calc-order {
     padding: 10px 0;
-    .subtotal,
-    .total {
+    .subtotal {
       color: gray;
-      display: flex;
-      justify-content: space-between;
     }
     .total {
       color: #5e5e5e;
